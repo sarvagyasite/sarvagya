@@ -4,7 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SARVAGYA - Learn & Fun</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #ffffff;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .auth-buttons .sign-in {
+            color: #333;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .auth-buttons .try-free {
+            background: #ff6347;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .hero {
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .hero h1 span {
+            color: #2f80ed;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .cta-buttons a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .get-started {
+            background: #2f80ed;
+            color: #fff;
+        }
+
+        .how-it-works {
+            background: #ddd;
+            color: #333;
+        }
+
+        .illustration img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav, .auth-buttons {
+                margin-top: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a, .auth-buttons a {
+                margin: 5px 0;
+            }
+
+            main {
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .illustration img {
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .cta-buttons a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            .illustration img {
+                max-width: 250px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
