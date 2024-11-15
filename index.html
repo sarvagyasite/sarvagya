@@ -3,198 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SARVAGYA - Learn & Fun</title>
+    <title>Under Construction</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
         body {
-            background: #f5f7fa;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #ffffff;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
             color: #333;
-        }
-
-        nav {
             display: flex;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .auth-buttons {
-            display: flex;
+            justify-content: center;
             align-items: center;
-            margin-top: 10px;
-        }
-
-        .auth-buttons .sign-in {
-            color: #333;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-
-        .auth-buttons .try-free {
-            background: #ff6347;
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        main {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 50px;
-            flex-wrap: wrap;
-        }
-
-        .hero {
-            max-width: 500px;
+            height: 100vh;
             text-align: center;
-            margin-bottom: 20px;
         }
 
-        .hero h1 {
-            font-size: 36px;
-            color: #333;
-        }
-
-        .hero h1 span {
-            color: #2f80ed;
-        }
-
-        .hero p {
-            margin-top: 10px;
-            color: #555;
-        }
-
-        .cta-buttons {
-            margin-top: 20px;
-        }
-
-        .cta-buttons a {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .get-started {
-            background: #2f80ed;
-            color: #fff;
-        }
-
-        .how-it-works {
-            background: #ddd;
-            color: #333;
-        }
-
-        .illustration img {
-            width: 100%;
-            max-width: 400px;
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
         }
 
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
 
-            nav, .auth-buttons {
-                margin-top: 10px;
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
 
-            nav a, .auth-buttons a {
-                margin: 5px 0;
-            }
+        .loader {
+            margin: 20px auto;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
 
-            main {
-                flex-direction: column;
-                padding: 20px;
-                text-align: center;
+        /* Animations */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
             }
-
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            .illustration img {
-                max-width: 300px;
+            100% {
+                transform: rotate(360deg);
             }
         }
 
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 24px;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
             }
-
-            .cta-buttons a {
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-
-            .illustration img {
-                max-width: 250px;
+            to {
+                opacity: 1;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">E-Learn</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Courses</a>
-            <a href="#">Mentors</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="auth-buttons">
-            <a href="#" class="sign-in">Sign In</a>
-            <a href="#" class="try-free">Try for free</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>Choose your future with <span>learn & fun.</span></h1>
-            <p>Anywhere, anytime. Start learning today!</p>
-            <div class="cta-buttons">
-                <a href="#" class="get-started">Get Started</a>
-                <a href="#" class="how-it-works">How it Works</a>
-            </div>
-        </section>
-        <section class="illustration">
-            <!-- Placeholder for illustration -->
-            <img src="illustration-placeholder.jpg" alt="Learning Illustration">
-        </section>
-    </main>
+    <div class="container">
+        <h1>🚧 SARVAGYA is Coming Soon! 🚧</h1>
+        <p>We’re working hard to bring you a powerful platform for students, teachers, parents, and administrators.</p>
+        <p>Stay tuned for updates!</p>
+        <div class="loader"></div>
+    </div>
 </body>
 </html>
