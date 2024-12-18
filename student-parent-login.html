@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Saravgya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <style>
+        .desktop-only {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none;
+            }
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('assets/images/'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Optional: Fix the background while scrolling */
+        }
+
+        .primary-color {
+            color: rgb(255, 77, 30);
+        }
+
+        .primary-bg {
+            background-color: rgb(255, 77, 30);
+        }
+
+        .primary-border {
+            border-color: rgb(255, 77, 30);
+        }
+
+        /* Optional: Make the form container background slightly opaque for contrast */
+        .login-form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque white */
+            border-radius: 8px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h4>Saravgya<span>Site</span></h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About Us</a></li>
+                            <li class="scroll-to-section"><a href="#services">Services</a></li>
+                            <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
+                            <li class="scroll-to-section"><a href="#blog">Blog</a></li>
+                            <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
+                            <li class="scroll-to-section">
+                                <div class="main-red-button"><a href="login.html">Login/Sign Up</a></div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- Centered Login Section with Background -->
+    <div class="login-container">
+        <div class="w-full max-w-md p-8 login-form-container">
+            <!-- Welcome Message -->
+            <div class="mt-8 text-center">
+                <h1 class="primary-color text-4xl font-bold">Hi!</h1>
+                <h2 class="primary-color text-4xl font-bold">Welcome</h2>
+                <p class="text-gray-400 mt-2">I'm waiting for you, please enter your details.</p>
+            </div>
+
+            <!-- Login Form -->
+            <div class="mt-8">
+                <h3 class="text-gray-800 font-semibold">Students/Parents Login</h3>
+                <form class="mt-4">
+                    <!-- Username -->
+                    <div class="mb-4">
+                        <input type="text" placeholder="Username" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-primary-border" aria-label="Username" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="mb-4 relative">
+                        <input type="password" placeholder="Password" class="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-primary-border" aria-label="Password" required>
+                        <i class="fas fa-eye absolute right-3 top-3 text-gray-400 cursor-pointer"></i>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="error-message" class="text-red-500 text-sm hidden">
+                        Invalid username or password.
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="flex items-center justify-between mb-4">
+                        <label class="flex items-center text-gray-400">
+                            <input type="checkbox" class="mr-2">
+                            Remember Me
+                        </label>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">Forgot Password?</a>
+                    </div>
+
+                    <!-- Login Button -->
+                    <button class="w-full primary-bg text-white py-2 rounded-full font-bold hover:bg-red-600 focus:ring focus:ring-red-400">
+                        Log In
+                    </button>
+                </form>
+            </div>
+
+            <!-- Sign Up Link -->
+            <div class="mt-8 text-center">
+                <p class="text-gray-400">
+                    Don't have an account?
+                    <a href="#" class="text-gray-800 font-semibold hover:underline">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const passwordInput = document.querySelector('input[type="password"]');
+            const toggleIcon = document.querySelector('.fa-eye');
+
+            toggleIcon.addEventListener("click", () => {
+                const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+                passwordInput.setAttribute("type", type);
+                toggleIcon.classList.toggle("fa-eye-slash");
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <p>© Copyright 2024 Tapa GOC. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
+</body>
+
+</html>
+s
