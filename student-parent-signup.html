@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <title>Saravgya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <style>
+        .desktop-only {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none;
+            }
+        }
+
+
+        .containerji {
+        display: grid;
+        place-items: center; /* Center both horizontally and vertically */
+        height: 300vh;       /* Full viewport height */
+        background-color: #f3f4f6; /* Optional background color for visibility */
+    }
+    </style>
+
+<script>
+    function validatePassword() {
+        const password = document.getElementById("password");
+        const confirmPassword = document.getElementById("confirm-password");
+        if (password.value !== confirmPassword.value) {
+            confirmPassword.setCustomValidity("Passwords do not match");
+        } else {
+            confirmPassword.setCustomValidity("");
+        }
+    }
+</script>
+
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h4>Saravgya<span>Site</span></h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                           <ul class="nav">
+            <li class="scroll-to-section"><a href="index.html#top" >Home</a></li>
+            <li class="scroll-to-section"><a href="index.html#about">About Us</a></li>
+            <li class="scroll-to-section"><a href="index.html#services">Services</a></li>
+            <li class="scroll-to-section"><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="scroll-to-section"><a href="index.html#blog">Blog</a></li> 
+            <li class="scroll-to-section"><a href="index.html#contact">Message Us</a></li> 
+            <li class="scroll-to-section"><div class="main-red-button"><a href="choose-login-method.html">login here</a></div></li> 
+          </ul>        
+         
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+   
+       <div class="containerji">
+                    <div class="w-full max-w-2xl bg-white p-8 rounded-lg shadow-md ">
+                <h1 class="text-3xl font-bold text-center mb-8">Student/Parents Registration Form</h1>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="first-name">Student's First Name*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="first-name" placeholder="Enter Student's First Name here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="last-name">Student's Last Name*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="last-name" placeholder="Enter Student's Last Name here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="dob">DOB*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="dob" placeholder="xx/xx/xxxx" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="class">Select Class*</label>
+                        <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="class" required>
+                            <option>Select Your Class Here</option>
+                            <option>1 Class</option>
+                            <option>2 Class</option>
+                            <option>3 Class</option>
+                            <option>4 Class</option>
+                            <option>5 Class</option>
+                            <option>6 Class</option>
+                            <option>7 Class</option>
+                            <option>8 Class</option>
+                            <option>9 Class</option>
+                            <option>10 Class</option>
+                            <option>11 Class - Science (Medical)</option>
+                            <option>11 Class - Science (Non-Medical)</option>
+                            <option>11 Class - Commerce</option>
+                            <option>11 Class - Arts</option>
+                            <option>12 Class - Science (Medical)</option>
+                            <option>12 Class - Science (Non-Medical)</option>
+                            <option>12 Class - Commerce</option>
+                            <option>12 Class - Arts</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="school-name">School Name*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="school-name" placeholder="Enter Your School Name Here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="school-id">School ID*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="school-id" placeholder="Enter Your School's UID" required>
+                        <p class="text-xs text-gray-500 mt-1">PROVIDED BY OUR APP OR YOU CAN GET IT ON <a href="https://docs.google.com/document/d/1enP09SBvOaznX-LTQSyRBR5TmdemymziSj6Ep7nrHZU/edit?usp=sharing" class="text-blue-500">Clicking Here</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="aadhaar">Student Aadhaar Card*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" id="aadhaar" placeholder="Enter the Aadhaar card number here." required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="phone">Phone Number (LINKED TO AADHAAR)*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" id="phone" placeholder="Enter Your Phone Number Here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="mother-name">Mother's Name*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="mother-name" placeholder="Enter Mother's Name Here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="mother-whatsapp">Mother's Whatsapp Number</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" id="mother-whatsapp" placeholder="Enter Mother's Whatsapp Number Here">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="father-name">Father's Name*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="father-name" placeholder="Enter Father's Name Here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="father-whatsapp">Father's Whatsapp Number *</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" id="father-whatsapp" placeholder="Enter Father's Whatsapp Number Here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="email">Email*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" id="email" placeholder="Enter Email Here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="password">Choose a strong password*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="password" id="password" placeholder="Enter Your Password Here" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="confirm-password">Confirm Password*</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="password" id="confirm-password" placeholder="Confirm Your Password Here" required oninput="validatePassword()">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="profile-photo">Upload Your Profile Photo Here</label>
+                        <div class="flex items-center">
+                            <i class="fas fa-upload text-gray-500 mr-2"></i>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="file" id="profile-photo" required>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <i class="fas fa-check-circle mr-2"></i> Submit for Verification
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+       
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <p>© Copyright 2024 Tapa GOC. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
+</body>
+
+</html>
