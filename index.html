@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,6 +35,44 @@
               display: none;
           }
       }
+
+      .mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    text-align: center; /* Optional: Center the button */
+  }
+
+  .mobile-only .login-button {
+    width: 100%; /* Optional: Full-width button for better touch usability */
+    padding: 10px; /* Optional: Adjust padding */
+    font-size: 16px; /* Optional: Adjust font size */
+  }
+}
+
+
+/* Common Button Styling for Login/Sign-Up */
+.button-common {
+  display: inline-block;
+  background-color: #fe3f40;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+}
+
+
+.button-common:hover {
+  background-color: #5c0505; /* Darker Blue */
+}
+
   </style>
   
   </head>
@@ -94,7 +133,11 @@
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h6>Welcome to Saravgya</h6>
                 <h2>We pledge to provide<em> equal and valuable</em><span></span> education.</h2>
-                <p>SARVAGYA is dedicated to empowering students, teachers, and parents with a smart, seamless platform for learning, communication, and growth, strictly following <a rel="nofollow" href="https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf" target="_parent">NEP 2020.</a>.</p>
+                <p class="desktop-only">SARVAGYA is dedicated to empowering students, teachers, and parents with a smart, seamless platform for learning, communication, and growth, strictly following <a rel="nofollow" href="https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf" target="_parent">NEP 2020.</a>.</p>
+                <div class="mobile-only">
+                  <button class="button-common"
+                  onclick="window.location.href='choose-login-method.html'">Login/Sign Up</button>
+                </div>
                 <form id="search" action="#" method="GET">
                   <fieldset>
                     <input type="address" name="address" class="email" placeholder="School Name" autocomplete="on" required>
@@ -367,8 +410,8 @@
             <h2>Have questions or need assistance? We're here to help—drop us a message!</h2>
             <p>Feel Free To Send Us a Message About Your Needs & Doubts</p>
             <div class="phone-info">
-              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="tel:+1234567890">959-263-1751</a></span></h4>
-            <h3>,</h3>
+              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="tel:+91-95926-31751">959-263-1751</a></span></h4>
+            
               <h4>Mon-Sat(between 5PM-9PM)</h4>
             </div>
           </div>
